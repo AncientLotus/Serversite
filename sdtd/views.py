@@ -5,6 +5,9 @@ from django.http import HttpResponse
 def sdtd(request):
 	return render(request, 'sdtd/serverlist.html')
 
+def screenshots(request):
+	return render(request, 'sdtd/screenshots/screenshots.html')
+
 def whisperwind(request):
     return render(request, 'sdtd/whisperwind/whisperwindmain.html')
 
@@ -28,3 +31,15 @@ def karacommands(request):
 
 def karadonations(request):
     return render(request, 'sdtd/karazhan/karapages/donations.html')
+
+def lightbringer(request):
+    return render(request, 'sdtd/lightbringer/lightbringermain.html')
+
+def lbrules(request):
+    return render(request, 'sdtd/lightbringer/lbpages/rules.html')
+
+def lbcommands(request):
+    return render(request, 'sdtd/lightbringer/lbpages/commands.html')
+
+def lbdonations(request):
+    return render(request, 'sdtd/lightbringer/lbpages/donations.html')
