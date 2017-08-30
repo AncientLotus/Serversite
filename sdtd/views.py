@@ -5,8 +5,16 @@ from django.http import HttpResponse
 def sdtd(request):
 	return render(request, 'sdtd/serverlist.html')
 
+
+
+
+
 def screenshots(request):
 	return render(request, 'sdtd/screenshots/screenshots.html')
+
+
+
+
 
 def whisperwind(request):
     return render(request, 'sdtd/whisperwind/whisperwindmain.html')
@@ -20,6 +28,10 @@ def wwcommands(request):
 def wwdonations(request):
     return render(request, 'sdtd/whisperwind/wwpages/donations.html')
 
+
+
+
+
 def karazhan(request):
     return render(request, 'sdtd/karazhan/karazhanmain.html')
 
@@ -32,8 +44,15 @@ def karacommands(request):
 def karadonations(request):
     return render(request, 'sdtd/karazhan/karapages/donations.html')
 
+
+
+
+
 def lightbringer(request):
     return render(request, 'sdtd/lightbringer/lightbringermain.html')
+
+def lbinstall(request):
+    return render(request, 'sdtd/lightbringer/lbpages/install.html')
 
 def lbrules(request):
     return render(request, 'sdtd/lightbringer/lbpages/rules.html')
@@ -43,3 +62,33 @@ def lbcommands(request):
 
 def lbdonations(request):
     return render(request, 'sdtd/lightbringer/lbpages/donations.html')
+
+
+
+
+def northshire(request):
+    return render(request, 'sdtd/northshirevalley/northshiremain.html')
+
+def nvrules(request):
+    return render(request, 'sdtd/northshirevalley/nvpages/rules.html')
+
+def nvcommands(request):
+    return render(request, 'sdtd/northshirevalley/nvpages/commands.html')
+
+def nvdonations(request):
+    return render(request, 'sdtd/northshirevalley/nvpages/donations.html')
+
+
+
+
+def daggerspine(request):
+    return render(request, 'sdtd/daggerspine/daggerspinemain.html')
+
+def dsrules(request):
+    return render(request, 'sdtd/daggerspine/dspages/rules.html')
+
+def dscommands(request):
+    return render(request, 'sdtd/daggerspine/dspages/commands.html')
+
+def dsdonations(request):
+    return render(request, 'sdtd/daggerspine/dspages/donations.html')
