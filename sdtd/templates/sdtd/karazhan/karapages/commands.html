@@ -2,6 +2,302 @@
 
 {% block content %}
 
-...
+<span style="color: red"><h1>Commands</h1></span>
+<h5><span style="color: green">Green commands = CBSM commands</span><br><span style="color: blue">Blue = CBSM and OSM</span><br><span style="color: yellow">Yellow commands = OSM commands</span></h5>
+<h6>CBSM-Cloud Based Server Manager: Commands are subject to lose connection and not be available.</h6>
+<h6>OSM-On Server Manager: This is a manager sitting on the server with the game and cannot lose connection</h6>
+
+
+<h4>Getting Started</h4>
+  <div id="accordion" role="tablist">
+    <div class="card">
+     <div class="card-header" role="tab" id="headingOne">
+       <h5 class="mb-0">
+         <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+           <span style="color: green">/sethome</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Sets your home at the current location.<br>
+         Usage Example: /sethome<br>
+         Fee: 5 zCoins
+       </div>
+     </div>
+    </div>
+
+
+    <div class="card">
+     <div class="card-header" role="tab" id="headingTwo">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           <span style="color: green">/home</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Teleports you to your home.<br>
+         Usage Example: /homeFee: 1 zCoins<br>
+         Cooldown: 10 Minutes
+       </div>
+     </div>
+    </div>
+    <br>
+    <br>
+    <h4>Economy</h4>
+    <h5>Players earn 1 zCoin per zombie killed, and 0.20 zCoins per minute played.</h5>
+    <div class="card">
+     <div class="card-header" role="tab" id="headingThree">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <span style="color: green">/shop</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: This will display a list of non-grouped items within the server shop.<br>
+         Usage Example: /shop<br>
+         Related Command: /shop list (This will display a list of grouped items within the server shop.Usage Example: /shop food)
+       </div>
+     </div>
+    </div>
+
+    <div class="card">
+     <div class="card-header" role="tab" id="headingFour">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+         <span style="color: green">  /buy</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: This is used to purchase the item from the server shop. The item is specified by ID, as found from the /shop command.<br>
+         When you purchase an item, it will appear at your feet. Press E to pick it up<br>
+         Usage Example: /buy 52605
+       </div>
+     </div>
+    </div>
+
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading5">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+         <span style="color: green">  /wallet</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Displays your wallet balance.<br>
+         Usage Example: /wallet
+       </div>
+     </div>
+    </div>
+
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading6">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+         <span style="color: green">  /pay [#] zCoins to [name of player]</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: This will send the specified amount to the provided player.<br>
+         Usage Example: /pay 50 zCoins to zombiehunter17
+       </div>
+     </div>
+    </div>
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading7">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+         <span style="color: green">  /money</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Displays a list of the top 10 wealthiest players.<br>
+         Usage Example: /money
+       </div>
+     </div>
+    </div>
+    <br>
+    <br>
+    <h4>Fast Travel</h4>
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading8">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+         <span style="color: green">  /zgate create [name]</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading8" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Creates a zGate with the provided name at your current location.<br>
+         Usage Example: /zgate create mySpot<br>
+         Creation Fee: 25 zCoins<br>
+         Max zGates / Player: 3<br>
+       </div>
+     </div>
+    </div>
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading9">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+         <span style="color: green">  /zgate visit [name]</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Teleports you to the zGate that you specified. You must be the owner of the zGate, or it must be set to public.<br>
+         Usage Example: /zgate visit Hotel<br>
+         Usage Fee: 5 zCoins<br>
+         Usage Delay: 10 Minutes
+       </div>
+     </div>
+    </div>
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading10">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+           <span style="color: green">/zgate toggle [name]</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading10" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Changes the privacy status of the zGate from Private to Public. And Public, back to Private.<br>
+         Public zGates can be visited by anyone!<br>
+         Usage Example: /zgate toggle mySpot
+       </div>
+     </div>
+    </div>
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading11">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+         <span style="color: green">  /zgate delete [name] </span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Deletes the zGate. Can only be done by the zGate owner, and server admin.<br>
+         Usage Example: /zgate delete mySpot
+       </div>
+     </div>
+    </div>
+    <br>
+    <br>
+    <h4>Survive and Thrive</h4>
+    <div class="card">
+     <div class="card-header" role="tab" id="heading12">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+           <span style="color: green">/day7 (currently having issues)</span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12" data-parent="#accordion">
+       <div class="card-body">
+         Command Details:Calculates days remaining until next BloodMoon and current amount of zombies in game.<br>
+         7 days remaining means it is a BloodMoon.
+       </div>
+     </div>
+    </div>
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading13">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+         <span style="color: green">  /revive </span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse13" class="collapse" role="tabpanel" aria-labelledby="heading13" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Teleports you to the location of your last corpse.<br>
+         <b>Must be typed immediatly after you respawn</b><br>
+         Fee: 25 zCoins<br>
+         Cooldown: 30 Minute
+       </div>
+     </div>
+    </div>
+
+    <div class="card">
+     <div class="card-header" role="tab" id="heading14">
+       <h5 class="mb-0">
+         <a class="collapsed" data-toggle="collapse" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+           <span style="color: green"> /gimmie  </span>
+         </a>
+       </h5>
+     </div>
+     <div id="collapse14" class="collapse" role="tabpanel" aria-labelledby="heading14" data-parent="#accordion">
+       <div class="card-body">
+         Command Details: Randomly chooses configured number of rewards from any items that are not grouped<br>
+         Usage Example: /gimme<br>
+         Fee: 5 zCoins<br>
+         Cooldown: 30 Minutes<br>
+         Rewards: 1 Random Item
+       </div>
+     </div>
+    </div>
+  </div>
+<br>
+<br>
+
+  <h4>Karazhan Specific Commands</h4>
+
+<div class="card">
+  <div class="card-header" role="tab" id="heading16">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" href="#collapse16" aria-expanded="false" aria-controls="collapse16">
+        /new
+      </a>
+    </h5>
+  </div>
+  <div id="collapse16" class="collapse" role="tabpanel" aria-labelledby="heading16" data-parent="#accordion">
+    <div class="card-body">
+      Command Details: A once time use command that drops a care package at teh players feet.  Players should inspect the ground carefully for all items.  This command should be used
+      once the player is in a safe place<br>
+      Cooldown: 999999999<br>
+      Fee: 0<br>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card">
+  <div class="card-header" role="tab" id="heading17">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" href="#collapse17" aria-expanded="false" aria-controls="collapse17">
+        /visitpit2
+      </a>
+    </h5>
+  </div>
+  <div id="collapse17" class="collapse" role="tabpanel" aria-labelledby="heading17" data-parent="#accordion">
+    <div class="card-body">
+      A smaller pit for bloodmoons groups of less than 5 people.<br>
+      Cooldown: 0<br>
+      Fee: 0 <br>
+    <b>Related Commands:  /pitcleanup  (Cleans the pit after a fight)</b> /pit2exit (Teleports player outside the pit for looting)
+    </div>
+  </div>
+</div> -->
 
 {% endblock %}
